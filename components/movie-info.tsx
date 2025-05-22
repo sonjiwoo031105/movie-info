@@ -1,7 +1,7 @@
 import { getMovie } from "../lib/api/movie-api";
 import styles from "../styles/movie-info.module.css";
 
-export default async function MovieInfo({ id }: { id: string }) {
+const MovieInfo = async ({ id }: { id: string }) => {
     const movie = await getMovie(id);
     return (
         <div className={styles.container}>
@@ -15,3 +15,5 @@ export default async function MovieInfo({ id }: { id: string }) {
         </div>
     );
 }
+
+export default MovieInfo;

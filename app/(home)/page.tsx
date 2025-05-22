@@ -6,7 +6,7 @@ export const metadata = {
     title: "Home",
 };
 
-export default async function HomePage() {
+const HomePage = async () => {
     const movies = await getMovies();
     return (
         <div className={styles.container}>
@@ -16,3 +16,5 @@ export default async function HomePage() {
         </div>
     )
 }
+
+export default HomePage;

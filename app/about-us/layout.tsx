@@ -1,8 +1,4 @@
-export default function AboutUsLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const AboutUsLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
         {children}
@@ -10,3 +6,5 @@ export default function AboutUsLayout({
     </div>
   )
 }
+
+export default AboutUsLayout;

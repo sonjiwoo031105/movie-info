@@ -10,11 +10,7 @@ export const metadata: Metadata = {
   description: 'THe best movies on the best framework',
 }
 
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body>
@@ -24,3 +20,5 @@ export default function Layout({
     </html>
   )
 }
+
+export default Layout;

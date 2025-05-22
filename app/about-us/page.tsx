@@ -2,10 +2,12 @@ export const metadata = {
   title: 'About us',
 }
 
-export default function AboutUs() {
+const AboutUs = () => {
     return (
         <div>
             <h1>About us!</h1>
         </div>
     )
 }
+
+export default AboutUs;

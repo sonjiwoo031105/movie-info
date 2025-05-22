@@ -1,5 +1,7 @@
 "use client";
 
-export default function ErrorOMG() {
+const ErrorOMG = () => {
     return <h1>lol somthing broke...</h1>;
 }
+
+export default ErrorOMG;

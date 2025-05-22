@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "../styles/navigation.module.css";
 
-export default function Navigation() {
+const Navigation = () => {
     const path = usePathname();
     return (
         <nav className={styles.nav}>
@@ -20,3 +20,5 @@ export default function Navigation() {
         </nav>
     )
 }
+
+export default Navigation;
